@@ -1,22 +1,22 @@
-[ATTACH type="full" alt="VLT-Zipper2_Logo.JPG"]14269[/ATTACH]
+VLT-Zipper 2
 
 VLT-Zipper 2 kommt nun ohne XiaoTea!
 XiaoTea muss von dem Benutzer manuell hinzugefügt werden.
 Ebenso benötigt VLT-Zipper 2 nun die unverschlüsselten Vanilla Firmware Dateien DRV236.bin und DRV304.bin.
 (Beschreibung wie ihr die benötigten dinge in VLT-Zipper 2 integriert unten bei Download zu finden)
 
-[B]Ich habe VLT-Zipper aber auch stark in sachen Sicherheit überarbeitet.[/B]
+Ich habe VLT-Zipper aber auch stark in sachen Sicherheit überarbeitet.
 Neben der, im Hintergrund ablaufenden Überprüfungen, die z.b. verifizieren ob eine Datei auch richtig erstellt wurde,
 Ist die größte Verbesserung nun, dass die params.txt (zu finden in der fertigen zip) auch die Offsets und jeweiligen Veränderungen
 der VLT-Firmware beinhaltet.
 Das ermöglicht nun noch besser nachzuvollziehen, was in der VLT-Firmware überhaupt gepatcht wurde.
 Auch kann in Zukunft, sollte der Roller mal ein ungewöhnliches Verhalten zeigen, hier im VLT Thread besagte params.txt gepostet werden.
 Dann können wir untersuchen was das "ungewollte Verhalten" verursacht und verbessern.
-Das ist der Grund, warum [USER=13840]@nandtek[/USER] und ich ab jetzt den VLT-Zipper 2 als bevorzugte Methode,
+Das ist der Grund, warum nandtek und ich ab jetzt den VLT-Zipper 2 als bevorzugte Methode,
 für das erstellen einer zip Datei empfehlen.
 
 So sieht eine von VLT-Zipper 2 generierte params.txt nun aus.
-[SPOILER]
+
 - Version: DRV236;
 This file has been generated from VLT_Zipper powered by XiaoTea. Make sure you know what it contains.;
 ;
@@ -48,11 +48,11 @@ Vergleichen der Dateien C:\VLT_ZIPPER2\RESOURCE\BIN\FIRMWARES\DRV236.bin und C:\
 000068B0: 43 3A
 000068B1: 20 21
 
-[/SPOILER]
-[COLOR=rgb(250, 197, 28)]Offset[/COLOR] [COLOR=rgb(65, 168, 95)]Vanillawert an dem Offset[/COLOR] [COLOR=rgb(184, 49, 47)]Modifizierter Wert an dem Offset[/COLOR]
-[COLOR=rgb(250, 197, 28)]00000724:[/COLOR] [COLOR=rgb(65, 168, 95)]43[/COLOR] [COLOR=rgb(184, 49, 47)]3A[/COLOR]
 
-[B]Die Handhabung von VLT-Zipper 2 bleibt gewohnt einfach![/B]
+Offset | Vanillawert an dem Offset| Modifizierter Wert an dem Offset
+
+
+Die Handhabung von VLT-Zipper 2 bleibt gewohnt einfach!
 Es muss nur die gepatchte .bin (unverschlüsselte Firmware) auf die VLT-Zipper2.bat gezogen werden.
 Dann macht VLT-Zipper 2 alles automatisch.
 1. Firmware version wird überprüft
@@ -70,18 +70,18 @@ die erwartete Bytegröße hat.
 Das macht VLT-Zipper 2 aktuell zu der sichersten Methode, um aus seiner gepatchten .bin eine zip Datei zum flashen zu erstellen.
 
 
-[B][U][SIZE=7]Download und Anleitung[/SIZE][/U][/B]
+Download und Anleitung
 VLT-Zipper 2 exestiert momentan nur für Win7-10 (Win11 und WinXP ungetestet)
 Android Version wird bei entsprechend hohem Bedarf folgen
 
-[URL='https://github.com/BotoX/xiaomi-m365-firmware-patcher/raw/master/xiaotea/xiaotea.py']-->xiaotea.py<--[/URL] (Rechts klick, Ziel speichern unter...)
-[URL='https://github.com/BotoX/xiaomi-m365-firmware-patcher/raw/master/xiaotea/enc.py']-->enc.py<--[/URL] (Rechts klick, Ziel speichern unter...)
-[URL='https://github.com/BotoX/xiaomi-m365-firmware-patcher/raw/master/xiaotea/dec.py']-->dec.py<--[/URL] (Rechts klick, Ziel speichern unter...)
-[URL='https://files.scooterhacking.org/firmware/pro2/DRV/DRV236.bin']-->DRV236.bin<--[/URL]
-[URL='https://files.scooterhacking.org/firmware/1s/DRV/DRV304.bin']-->DRV304.bin<--[/URL]
+https://github.com/BotoX/xiaomi-m365-firmware-patcher/raw/master/xiaotea/xiaotea.py
+https://github.com/BotoX/xiaomi-m365-firmware-patcher/raw/master/xiaotea/enc.py
+https://github.com/BotoX/xiaomi-m365-firmware-patcher/raw/master/xiaotea/dec.py
+https://files.scooterhacking.org/firmware/pro2/DRV/DRV236.bin
+https://files.scooterhacking.org/firmware/1s/DRV/DRV304.bin
 
 1. VLT-Zipper2.zip entpacken
 2. xiaotea.py, enc.py, dec.py in "VLT_Zipper2\resource\bin\python\"  speichern
 3. Vanilla Firmwares DRV236.bin, DRV304.bin in "VLT_Zipper2\resource\bin\firmwares\"  speichern
 
-[B]Fertig, nun ist VLT-Zipper2 100% einsatzbereit![/B]
+Fertig, nun ist VLT-Zipper2 100% einsatzbereit!
